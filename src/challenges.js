@@ -52,14 +52,36 @@ function highestCount(array) {
   }
   return contagem
 }
+
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2){
+  let disCat1 = Math.abs(mouse - cat1);
+  let disCat2 = Math.abs(mouse - cat2);
+
+  if (disCat1 < disCat2){
+    return "cat1"
+  }else if (disCat2 < disCat1){
+    return "cat2"
+  }else {
+    return "os gatos trombam e o rato foge"
+  }
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let resultado = [];
+  for(let index in array){
+    if (index % 3 == 0){
+      resultado.push("fizz")
+    }else if (index % 5 == 0){
+      resultado.push("buzz")
+    }else if (index % 3 == 0 && index % 5 == 0){
+      resultado.push('fizzBuzz')
+    }else {
+      resultado.push('bug!')
+    }
+  }
+  return resultado;
 }
 
 // Desafio 9
@@ -81,4 +103,4 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-};
+}

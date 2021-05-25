@@ -28,15 +28,18 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vitoria = wins * 3;
+  let empate = ties * 1;
+  let resultado = vitoria + empate;
+  
+  return resultado
 }
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+  
 }
-
 // Desafio 7
 function catAndMouse() {
   // seu código aqui

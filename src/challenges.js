@@ -85,12 +85,49 @@ return resultado;
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(cripto) {
+let criptoFull = "";
+
+  for (let key in cripto){
+    if (cripto[key] == "a"){
+      criptoFull = criptoFull + "1";
+    }else if (cripto[key] == "e"){
+      criptoFull = criptoFull + "2";
+    }else if (cripto[key] == "i"){
+      criptoFull = criptoFull + "3";
+    }else if (cripto[key] == "o"){
+      criptoFull = criptoFull + "4";
+    }else if (cripto[key] == "u"){
+      criptoFull = criptoFull + "5";
+    }else {
+      criptoFull = criptoFull + cripto[key]
+    }
+  }
+return criptoFull
 }
-function decode() {
-  // seu código aqui
+
+
+function decode(decri) {
+let decodeFull = "";
+
+  for (let key in decri){
+    if (decri[key] == "1"){
+      decodeFull = decodeFull + "a";
+    }else if (decri[key] == "2"){
+      decodeFull = decodeFull + "e";
+    }else if (decri[key] == "3"){
+      decodeFull = decodeFull + "i";
+    }else if (decri[key] == "4"){
+      decodeFull = decodeFull + "o";
+    }else if (decri[key] == "5"){
+      decodeFull = decodeFull + "u";
+    }else {
+      decodeFull = decodeFull + decri[key]
+    }
+  }
+return decodeFull
 }
+
 
 module.exports = {
   calcArea,

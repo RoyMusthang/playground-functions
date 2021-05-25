@@ -69,19 +69,19 @@ function catAndMouse(mouse, cat1, cat2){
 
 // Desafio 8
 function fizzBuzz(array) {
-  let resultado = [];
-  for(let index in array){
-    if (index % 3 == 0){
-      resultado.push("fizz")
-    }else if (index % 5 == 0){
-      resultado.push("buzz")
-    }else if (index % 3 == 0 && index % 5 == 0){
-      resultado.push('fizzBuzz')
-    }else {
-      resultado.push('bug!')
-    }
+let resultado = [];
+for (let index in array) {
+  if ((array[index] % 3 == 0) && (array[index] % 5 == 0)) {
+    resultado.push('fizzBuzz');      
+  } else if (array[index] % 5 == 0) {
+    resultado.push('buzz');
+  } else if (array[index] % 3 == 0) {
+    resultado.push('fizz');
+  } else {
+    resultado.push('bug!');
   }
-  return resultado;
+}
+return (resultado);
 }
 
 // Desafio 9

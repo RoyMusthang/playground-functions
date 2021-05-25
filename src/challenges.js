@@ -51,13 +51,14 @@ function highestCount(array) {
     }
   }
   return contagem
+// desafio com ajuda de Sumoyama
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2){
   let disCat1 = Math.abs(mouse - cat1);
   let disCat2 = Math.abs(mouse - cat2);
-
+// auxilio no desafio por Sumoyama
   if (disCat1 < disCat2){
     return "cat1"
   }else if (disCat2 < disCat1){
@@ -80,6 +81,7 @@ for (let index in array) {
   } else {
     resultado.push('bug!');
   }
+  // desafio deve ajuda do querido sumoyama
 }
 return resultado;
 }

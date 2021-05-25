@@ -17,11 +17,14 @@ function calcArea(base, height) {
 function splitSentence(frase) {
   let separador = frase.split(" ")
   return separador
-} console.log(splitSentence('foguete'))
+}
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let primeiro = array[0];
+  let ultimo = array [array.length -1];
+  let resultado = ultimo + ", "+ primeiro;
+  return resultado
 }
 
 // Desafio 5

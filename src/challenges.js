@@ -81,7 +81,7 @@ for (let index in array) {
     resultado.push('bug!');
   }
 }
-return (resultado);
+return resultado;
 }
 
 // Desafio 9

@@ -127,8 +127,19 @@ let decodeFull = "";
   }
 return decodeFull
 }
-
-
+function tecnologias(array, name){
+  let orgArray = array.sort();
+  let arrayOrganizado = [];
+  let erro = ""
+  if (Array.length === 0){
+    erro = "Vazio!"
+  }
+  for (let i = 0; i < array; i += 1){
+    arrayOrganizado.push({tecnologias: Array[i], name: name});
+    // laço for ajustado com ajuda do sumoyama S2
+  }
+  return arrayOrganizado;
+}
 module.exports = {
   calcArea,
   catAndMouse,

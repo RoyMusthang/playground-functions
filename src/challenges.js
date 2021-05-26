@@ -42,7 +42,7 @@ function highestCount(array) {
   let contagem = 0;
   for (let i in array){
     if (numero < array[i]){
-      numero = array[i];
+      numero = array[i];  
     }
   }
   for (let index in array){

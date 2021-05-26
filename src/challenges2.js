@@ -32,13 +32,30 @@ function generatePhoneNumber(telefone) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(a, b, c) {
+  if (a < b + c && a > b && a > c) {
+    return true;
+  }
+  if (b < a + c && b > c && b > a) {
+    return true;
+  }
+  if (c < a + b && c > a && c > a) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(valor) {
+  let listaNumero = valor.match(/[0-9]/g);
+  let soma = 0;
+    for(let numero of listaNumero){
+      soma += Number(numero)
+    }
+    if(soma > 1){
+      return `${soma} copos de água`
+    }
+  return `${soma} copo de água`
 }
 
 module.exports = {
